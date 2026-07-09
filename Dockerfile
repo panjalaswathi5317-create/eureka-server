@@ -1,8 +1,8 @@
-FROM eclipse-temurin:21-jdk
+FROM jenkins/jenkins:lts-jdk21
 
 WORKDIR /app
 
-COPY target/*.jar app.jar
+COPY target/metaarch-eureka-server-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8761
 
